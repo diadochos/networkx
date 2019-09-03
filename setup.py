@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Setup script for networkx
+Setup script for networkx_v1
 
-You can install networkx with
+You can install networkx_v1 with
 
 python setup.py install
 """
@@ -25,41 +25,41 @@ if sys.version_info[:2] < (2, 7):
     sys.exit(-1)
 
 # Write the version information.
-sys.path.insert(0, 'networkx')
+sys.path.insert(0, 'networkx_v1')
 import release
 version = release.write_versionfile()
 sys.path.pop(0)
 
-packages=["networkx",
-          "networkx.algorithms",
-          "networkx.algorithms.assortativity",
-          "networkx.algorithms.bipartite",
-          "networkx.algorithms.centrality",
-          "networkx.algorithms.chordal",
-          "networkx.algorithms.community",
-          "networkx.algorithms.components",
-          "networkx.algorithms.connectivity",
-          "networkx.algorithms.coloring",
-          "networkx.algorithms.flow",
-          "networkx.algorithms.traversal",
-          "networkx.algorithms.isomorphism",
-          "networkx.algorithms.shortest_paths",
-          "networkx.algorithms.link_analysis",
-          "networkx.algorithms.operators",
-          "networkx.algorithms.approximation",
-          "networkx.algorithms.tree",
-          "networkx.classes",
-          "networkx.external",
-          "networkx.generators",
-          "networkx.drawing",
-          "networkx.linalg",
-          "networkx.readwrite",
-          "networkx.readwrite.json_graph",
-          "networkx.tests",
-          "networkx.testing",
-          "networkx.utils"]
+packages=["networkx_v1",
+          "networkx_v1.algorithms",
+          "networkx_v1.algorithms.assortativity",
+          "networkx_v1.algorithms.bipartite",
+          "networkx_v1.algorithms.centrality",
+          "networkx_v1.algorithms.chordal",
+          "networkx_v1.algorithms.community",
+          "networkx_v1.algorithms.components",
+          "networkx_v1.algorithms.connectivity",
+          "networkx_v1.algorithms.coloring",
+          "networkx_v1.algorithms.flow",
+          "networkx_v1.algorithms.traversal",
+          "networkx_v1.algorithms.isomorphism",
+          "networkx_v1.algorithms.shortest_paths",
+          "networkx_v1.algorithms.link_analysis",
+          "networkx_v1.algorithms.operators",
+          "networkx_v1.algorithms.approximation",
+          "networkx_v1.algorithms.tree",
+          "networkx_v1.classes",
+          "networkx_v1.external",
+          "networkx_v1.generators",
+          "networkx_v1.drawing",
+          "networkx_v1.linalg",
+          "networkx_v1.readwrite",
+          "networkx_v1.readwrite.json_graph",
+          "networkx_v1.tests",
+          "networkx_v1.testing",
+          "networkx_v1.utils"]
 
-docdirbase  = 'share/doc/networkx-%s' % version
+docdirbase  = 'share/doc/networkx_v1-%s' % version
 # add basic documentation
 data = [(docdirbase, glob("*.txt"))]
 # add examples
@@ -82,33 +82,33 @@ for d in ['advanced',
 
 # add the tests
 package_data     = {
-    'networkx': ['tests/*.py'],
-    'networkx.algorithms': ['tests/*.py'],
-    'networkx.algorithms.assortativity': ['tests/*.py'],
-    'networkx.algorithms.bipartite': ['tests/*.py'],
-    'networkx.algorithms.centrality': ['tests/*.py'],
-    'networkx.algorithms.chordal': ['tests/*.py'],
-    'networkx.algorithms.community': ['tests/*.py'],
-    'networkx.algorithms.components': ['tests/*.py'],
-    'networkx.algorithms.connectivity': ['tests/*.py'],
-    'networkx.algorithms.coloring': ['tests/*.py'],
-    'networkx.algorithms.flow': ['tests/*.py', 'tests/*.bz2'],
-    'networkx.algorithms.traversal': ['tests/*.py'],
-    'networkx.algorithms.isomorphism': ['tests/*.py','tests/*.*99'],
-    'networkx.algorithms.link_analysis': ['tests/*.py'],
-    'networkx.algorithms.approximation': ['tests/*.py'],
-    'networkx.algorithms.operators': ['tests/*.py'],
-    'networkx.algorithms.shortest_paths': ['tests/*.py'],
-    'networkx.algorithms.traversal': ['tests/*.py'],
-    'networkx.algorithms.tree': ['tests/*.py'],
-    'networkx.classes': ['tests/*.py'],
-    'networkx.generators': ['tests/*.py'],
-    'networkx.drawing': ['tests/*.py'],
-    'networkx.linalg': ['tests/*.py'],
-    'networkx.readwrite': ['tests/*.py'],
-    'networkx.readwrite.json_graph': ['tests/*.py'],
-    'networkx.testing': ['tests/*.py'],
-    'networkx.utils': ['tests/*.py']
+    'networkx_v1': ['tests/*.py'],
+    'networkx_v1.algorithms': ['tests/*.py'],
+    'networkx_v1.algorithms.assortativity': ['tests/*.py'],
+    'networkx_v1.algorithms.bipartite': ['tests/*.py'],
+    'networkx_v1.algorithms.centrality': ['tests/*.py'],
+    'networkx_v1.algorithms.chordal': ['tests/*.py'],
+    'networkx_v1.algorithms.community': ['tests/*.py'],
+    'networkx_v1.algorithms.components': ['tests/*.py'],
+    'networkx_v1.algorithms.connectivity': ['tests/*.py'],
+    'networkx_v1.algorithms.coloring': ['tests/*.py'],
+    'networkx_v1.algorithms.flow': ['tests/*.py', 'tests/*.bz2'],
+    'networkx_v1.algorithms.traversal': ['tests/*.py'],
+    'networkx_v1.algorithms.isomorphism': ['tests/*.py','tests/*.*99'],
+    'networkx_v1.algorithms.link_analysis': ['tests/*.py'],
+    'networkx_v1.algorithms.approximation': ['tests/*.py'],
+    'networkx_v1.algorithms.operators': ['tests/*.py'],
+    'networkx_v1.algorithms.shortest_paths': ['tests/*.py'],
+    'networkx_v1.algorithms.traversal': ['tests/*.py'],
+    'networkx_v1.algorithms.tree': ['tests/*.py'],
+    'networkx_v1.classes': ['tests/*.py'],
+    'networkx_v1.generators': ['tests/*.py'],
+    'networkx_v1.drawing': ['tests/*.py'],
+    'networkx_v1.linalg': ['tests/*.py'],
+    'networkx_v1.readwrite': ['tests/*.py'],
+    'networkx_v1.readwrite.json_graph': ['tests/*.py'],
+    'networkx_v1.testing': ['tests/*.py'],
+    'networkx_v1.utils': ['tests/*.py']
     }
 
 install_requires = ['decorator>=3.4.0']
